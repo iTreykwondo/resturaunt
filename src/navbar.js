@@ -8,6 +8,8 @@ const navbar = () => {
   const aboutButtonText = document.createTextNode("About");
   const contactButtonText = document.createTextNode("Contact");
 
+  navBar.classList.add("navbar");
+
   homeButton.title = "Home";
   homeButton.href = "#";
   homeButton.append(homeButtonText);
