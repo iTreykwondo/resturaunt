@@ -9,6 +9,9 @@ const navbar = () => {
   const contactButtonText = document.createTextNode("Contact");
 
   navBar.classList.add("navbar");
+  aboutButton.classList.add("about");
+  homeButton.classList.add("home");
+  contactButton.classList.add("contact");
 
   homeButton.title = "Home";
   homeButton.href = "#";
