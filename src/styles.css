@@ -8,6 +8,7 @@
 
 body {
   font-family: "poppins", sans-serif;
+  overflow: hidden;
 }
 
 .navbar {
@@ -22,4 +23,18 @@ body {
   color: white;
   text-decoration: none;
   font-size: 24px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 50px;
+}
+
+.wrapper-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
