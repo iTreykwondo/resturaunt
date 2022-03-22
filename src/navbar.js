@@ -1,15 +1,15 @@
 const navbar = () => {
   const navBar = document.createElement("div");
   const homeButton = document.createElement("a");
-  const aboutButton = document.createElement("a");
+  const menuButton = document.createElement("a");
   const contactButton = document.createElement("a");
 
   const homeButtonText = document.createTextNode("Home");
-  const aboutButtonText = document.createTextNode("About");
+  const menuButtonText = document.createTextNode("Menu");
   const contactButtonText = document.createTextNode("Contact");
 
   navBar.classList.add("navbar");
-  aboutButton.classList.add("about");
+  menuButton.classList.add("menu");
   homeButton.classList.add("home");
   contactButton.classList.add("contact");
 
@@ -17,16 +17,16 @@ const navbar = () => {
   homeButton.href = "#";
   homeButton.append(homeButtonText);
 
-  aboutButton.title = "About";
-  aboutButton.href = "#";
-  aboutButton.append(aboutButtonText);
+  menuButton.title = "menu";
+  menuButton.href = "#";
+  menuButton.append(menuButtonText);
 
   contactButton.title = "Contact";
   contactButton.href = "#";
   contactButton.append(contactButtonText);
 
   navBar.appendChild(homeButton);
-  navBar.appendChild(aboutButton);
+  navBar.appendChild(menuButton);
   navBar.appendChild(contactButton);
 
   return navBar;
