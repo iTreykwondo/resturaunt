@@ -1,6 +1,6 @@
 import navbar from "./navbar";
 import home from "./home";
-import about from "./about";
+import menu from "./menu";
 import contact from "./contact";
 
 const renderWebpage = () => {
@@ -14,14 +14,14 @@ const renderWebpage = () => {
 
 document.body.appendChild(renderWebpage());
 
-const aboutpage = document.querySelector(".about");
-aboutpage.addEventListener("click", () => {
+const menupage = document.querySelector(".menu");
+menupage.addEventListener("click", () => {
   let content = document.querySelector("#content");
 
   if (content.hasChildNodes()) {
     content.removeChild(content.children[1]);
   }
-  content.append(about());
+  content.append(menu());
 });
 
 const homePage = document.querySelector(".home");
