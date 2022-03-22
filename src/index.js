@@ -7,7 +7,7 @@ const renderWebpage = () => {
   const content = document.createElement("div");
   content.setAttribute("id", "content");
   content.appendChild(navbar());
-  content.appendChild(home());
+  content.append(home());
 
   return content;
 };
