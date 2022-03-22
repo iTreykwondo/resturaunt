@@ -7,8 +7,9 @@
 }
 
 body {
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow: hidden;
+  background-color: #155263;
 }
 
 .navbar {
@@ -28,7 +29,8 @@ body {
 .hero {
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   gap: 50px;
 }
 
@@ -37,4 +39,21 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  text-shadow: 5px 5px 10px rgba(49, 46, 46, 0.4);
+}
+
+.wrapper-text h1 {
+  font-size: 62px;
+  background: -webkit-linear-gradient(rgb(197, 180, 24), rgb(236, 218, 218));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wrapper-text p {
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 20px;
+  background: -webkit-linear-gradient(rgb(236, 218, 218), rgb(197, 180, 24));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
