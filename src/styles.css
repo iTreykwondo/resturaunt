@@ -45,6 +45,7 @@ body {
 .wrapper-text h1 {
   font-size: 62px;
   background: -webkit-linear-gradient(rgb(197, 180, 24), rgb(236, 218, 218));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -54,6 +55,33 @@ body {
   font-size: 40px;
   margin-top: 20px;
   background: -webkit-linear-gradient(rgb(236, 218, 218), rgb(197, 180, 24));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.menu-list,
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  gap: 15px;
+}
+
+.menu-list h1,
+.contact-info h1 {
+  font-size: 40px;
+  border-bottom: 4px solid rgb(197, 180, 24);
+  background: -webkit-linear-gradient(rgb(197, 180, 24), rgb(236, 218, 218));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-list p,
+.contact-info p {
+  font-size: 24px;
+  color: #fff;
 }
